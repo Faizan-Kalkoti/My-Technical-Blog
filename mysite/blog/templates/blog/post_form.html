@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+{% block body_block %}
+{% load static %}
+{% include 'blog/base2.html' %}
+<h1>New Post Form </h1>
+<form method='POST' class='post-form'enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.media}}
+    {{form.as_p|safe}}
+    <button type='submit' class='save btn btn-secondary'>
+        Save
+    </button>   
+</form>
+
+{% include 'blog/base3.html' %}
+
+{% endblock body_block %}

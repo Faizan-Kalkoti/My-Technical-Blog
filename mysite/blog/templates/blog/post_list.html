@@ -1,0 +1,38 @@
+{% extends 'blog/base.html' %}
+{% block body_block %}
+{% load static %}
+
+<div>
+    <div style="position: absolute; padding: 1em;">
+    <h1>Blog Posts</h1>
+    <hr style="width: 500px; border: 2px solid black;">
+    </div>
+    <img style="width:100%;" src="{% static 'photos/blog_img2.jpg' %}" alt="blog image">
+</div>
+
+
+{% include 'blog/base2.html' %}
+
+
+<div class="centerstage">
+
+    {% for post in post_list %}
+    <div class="post">
+        <h2>
+         <a class="post_title" href="{% url 'post_detail' pk=post.pk %}"> {{post.title}}</a>
+        </h2>
+        <div class="date">
+            <p>Published on: {{post.published_date}}</p>
+        </div>
+        <a  class="post_comment" href="{% url 'post_detail' pk=post.pk %}"> Comments: 
+            {{ post.approve_comments.count}}
+        </a>
+    </div>
+    <br>
+    {% endfor %}
+</div>
+ 
+<div style="padding-bottom: 5em;"> </div>
+{% include 'blog/base3.html' %}
+   
+{% endblock body_block %}

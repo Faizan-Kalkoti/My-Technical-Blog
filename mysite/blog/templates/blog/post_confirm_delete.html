@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+{% block body_block %}
+
+{% include 'blog/base2.html' %}
+<form action="" method='post'>
+    {% csrf_token %}
+    <!-- 'object' is an inbuld DeleteView
+        object that is returned to the template -->
+    <p>Are you sure you want to delete "{{object}}" ? </p>
+    <input type="submit" class="btn btn-danger" value='Confirm'>
+</form>
+{% include 'blog/base3.html' %}
+{% endblock body_block %}
