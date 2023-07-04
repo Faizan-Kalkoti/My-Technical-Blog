@@ -5,6 +5,7 @@ body{
 .centerstage{
     margin-right: auto;
     margin-left: auto;
+    padding: 1em;
 }
 
 .post-date{
@@ -45,7 +46,12 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
     height: 35em;
-    overflow-y: auto;
+    /* box-shadow: 10px 10px 10px bisque; */
+    /* overflow-y: auto; */
+}
+
+.post-title2{
+font-size: 3em;
 }
 
 .blog_posts::-webkit-scrollbar{
@@ -98,4 +104,33 @@ body{
 .blog-img{
     width: 100%;
     height: 100%;
+}
+
+
+.login-section{
+    align-self: center;
+    margin: 1em 0em;
+    padding: 2em;
+    border-radius: 1em;
+    width: fit-content;
+    background-color: rgba(228, 218, 218, 0.635);
+}
+
+.outer-login{
+    margin: 5em 0em;
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    width:100%;
+    /* background-color: aqua; */
+}
+
+.login-image{
+    top:0px;
+    left: 0px;
+     position: absolute;
+     z-index: -10; 
+     width: 100%; 
+     height: 100%;
 }

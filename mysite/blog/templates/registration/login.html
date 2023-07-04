@@ -1,21 +1,35 @@
 {% extends 'blog/base.html' %}
+{% load static %}
 {% block body_block %}
 
- <div class='container mx-4 p-3'>
-    <h2>Please Login: </h2>
-    <h3>You must be the SuperUser!, Please check with the site admin</h3>
+<div class="outer-login">
+    <div class="login-image">
+        <img class="login-image"  src="{% static 'photos/login1.jpg' %}" alt="backgroud photo">
+    </div>
 
+ <div class='login-section' 
+  style="display:flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1>Admin Login</h1>
+    <br>
     {% if form.errors %}
     <p>Your username and password didn't match, please try again!</p>
     {% endif %}
-
-    <form action="{% url 'login' %}" method="POST">
+  <div style="padding:10px; width: 18em;">
+    <form action="{% url 'login' %}" method="POST" style="text-align:right;">
         {% csrf_token %}
         {{form.as_p}}
-        <input type="submit" class='btn btn-primary' value="Login">
+        <div style="text-align: center;">
+        <input type="submit" class='btn btn-dark ' style="padding:5px 20px;" value="Login">
         <input type="hidden" name='next' value="{{next}}">
+        </div>
     </form>
-
+  </div>
+  <br>
+  <h4 style="text-align:center;">You must be A SuperUser! <br>Please check with the site admin</h4>
  </div>
+
+</div>
+
+
 
 {% endblock body_block %}
