@@ -1,4 +1,5 @@
 {
+    "version": 2,
     "builds" : [
         {
             "src":"mysite/wsgi.py",
@@ -20,7 +21,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "mysite/mysite/wsgi.py"
+            "dest": "mysite/wsgi.py"
         }
     ]
 }
