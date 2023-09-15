@@ -1,0 +1,136 @@
+body{
+    font-family:'Roboto' Serif ;
+}
+
+.centerstage{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em;
+}
+
+.post-date{
+    text-align: center;
+}
+
+.posttitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.btn-comment{
+    position: static;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post{
+    /* background-color: rgba(245, 245, 245, 0.548); */
+    /* box-shadow: 10px 10px 10px rgb(240, 239, 239); */
+    margin-top: 10px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.352);
+}
+
+.post_title{
+    color: rgb(0, 44, 87);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.post_comment{
+    text-decoration: none;
+}
+
+.blog_posts {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 35em;
+    /* box-shadow: 10px 10px 10px bisque; */
+    /* overflow-y: auto; */
+}
+
+.post-title2{
+font-size: 3em;
+}
+
+.blog_posts::-webkit-scrollbar{
+    width: 4px;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+  }
+
+.detail_formatting{
+    background-color: rgba(250, 250, 250, 1);
+    box-shadow: -10px 10px 20px rgb(220, 229, 229);
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.detail-comment{
+    background-color: rgba(250, 250, 250, 1);
+    box-shadow: -10px 10px 20px rgb(230, 229, 229);
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.comment-dates{
+    font-size: 0.9em;
+}
+
+.commentformtext{
+    border: 1px solid rgb(92, 92, 92);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+.blog-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.login-section{
+    align-self: center;
+    margin: 1em 0em;
+    padding: 2em;
+    border-radius: 1em;
+    width: fit-content;
+    background-color: rgba(228, 218, 218, 0.635);
+}
+
+.outer-login{
+    margin: 5em 0em;
+    display:flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    width:100%;
+    /* background-color: aqua; */
+}
+
+.login-image{
+    top:0px;
+    left: 0px;
+     position: absolute;
+     z-index: -10; 
+     width: 100%; 
+     height: 100%;
+}
