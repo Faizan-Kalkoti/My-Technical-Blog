@@ -133,8 +133,11 @@ USE_TZ = True
 
 # STATICFILES_DIRS = [STATIC_DIR]
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'static')]
-STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles_build','static')
+# STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'static')]
+# STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles_build','static')
+
+STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'static')],
+STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles_build', 'static')
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
