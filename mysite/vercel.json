@@ -9,7 +9,7 @@
     "routes" : [
         {
             "src": "/(.*)",
-            "dest": "mysite/mysite/wsgi.py"
+            "destination": "/"
         }
     ],
     "rewrites": [{ "source": "/(.*)", "destination": "/" }]
