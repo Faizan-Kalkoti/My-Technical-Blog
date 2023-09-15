@@ -25,3 +25,5 @@ urlpatterns = [
     path('accounts/login/', views.LoginView.as_view(), name='login'),
     path('accounts/logout/', views.LogoutView.as_view(), name='logout', kwargs={'next_page': '/'}),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+urlpatterns+= static(settings.STATIC_URL, document_root= settings.STATIC_ROOT)
