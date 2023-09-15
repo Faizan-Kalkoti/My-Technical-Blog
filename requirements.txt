@@ -13,12 +13,13 @@ django-braces==1.15.0
 django-ckeditor==6.5.1
 django-js-asset==2.0.0
 Faker==17.3.0
+gunicorn==20.0.4
 misaka==2.1.1
 module-name==0.6.0
 mysql==0.0.3
 mysqlclient==2.2.0
 Pillow==9.5.0
-psycopg2==2.9.7
+psycopg2-binary==2.9.7
 pycparser==2.21
 PyMySQL==1.1.0
 pyotp==2.9.0
